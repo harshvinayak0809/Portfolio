@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-// import chatify from "../../Assets/Projects/chatify.png";
+import OJP from "../../Assets/Projects/ojp.jpg";
+import rrw from "../../Assets/Projects/rrw.jpg";
 
 function Projects() {
   return (
@@ -19,12 +20,20 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className='project-card'>
             <ProjectCard
-              // imgPath={chatify}
+              imgPath={rrw}
               isBlog={false}
-              title='Chatify'
-              description='Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages.'
-              ghLink='https://github.com/soumyajit4419/Chatify'
-              demoLink='https://chatify-49.web.app/'
+              title='Recipe App'
+              description='Recipe website to get any recipe with just on ekyword related to which you want.'
+              ghLink='https://github.com/harshvinayak0809/react-food-recipe'
+            />
+          </Col>
+          <Col md={4} className='project-card'>
+            <ProjectCard
+              imgPath={OJP}
+              isBlog={false}
+              title='Job Portal'
+              description='Portal to connect employer and seeker with ease at one place.'
+              ghLink='https://github.com/harshvinayak0809/online-job-portal'
             />
           </Col>
         </Row>
